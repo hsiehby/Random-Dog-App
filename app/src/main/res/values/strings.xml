@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Find Dog</string>
+    <string name="show_me_random_dog">Show Me Random Dog!</string>
+    <string name="randomdogpic">randomDogPic</string>
 </resources>

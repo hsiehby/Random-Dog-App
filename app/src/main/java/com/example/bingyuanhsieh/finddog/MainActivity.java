@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
         try {
             JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(
                     Request.Method.GET,
-                    "https://random.dog/woof.json",
+                    "https://aws.random.cat/meow",
                     null,
                     new Response.Listener<JSONObject>() {
                         @Override
@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
                             final ImageView display = findViewById(R.id.imageView1);
                             Bitmap img = null;
                             try {
-                                img = getBitmapFromURL(response.get("url").toString());
+                                img = getBitmapFromURL(response.get("file").toString());
                             } catch (JSONException ignored) { }
                             display.setImageBitmap(img);
                             apiCallDone(response);
